@@ -1,0 +1,29 @@
+url: http://www.sdyide.cn
+
+title: 怡德塑料
+
+keywords: 首页关键字
+
+description: 首页摘要。
+
+qq: 554805860
+
+permalink: /products/:title.html
+
+relative_permalinks: false
+
+exclude:
+  - README.md
+  - dede
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/js
+    - _assets/css
+  js_compressor: uglifier
+  css_compressor: sass
+  cache: true
+  cache_assets: true
+  gzip: []

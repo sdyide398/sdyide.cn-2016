@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="zh"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/sdyide-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="怡德塑料">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    {% stylesheet application %}
+    <!--[if lte IE 8]>
+      <script src="{{ site.url }}/assets/respond.js"></script>
+    <![endif]-->
+  </head>
+  <body class="smoothscroll">
+    <div id="wrapper">
+      <div id="header" class="sticky">
+        <header id="topBar">
+          <div class="container">
+            <div class="pull-right fsize13 margin-top10 hide_mobile">
+              <a href="{{ site.url }}/images/assets/weixin.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+                <img src="{{ site.url }}/images/assets/head-right.jpg" height="70" alt="怡德塑料">
+              </a>
+              <a href="https://sdyide.1688.com" target="_blank" rel="nofollow">
+                <img src="{{ site.url }}/images/assets/1688.jpg" height="70" alt="阿里旺铺">
+              </a>
+            </div>
+            <a class="logo" href="{{ site.url }}"><img src="{{ site.url }}/images/assets/sdyide-logo.png" height="70" alt="怡德塑料logo"></a>
+          </div>
+        </header>
+        <header id="topNav">
+          <div class="container">
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse"><i class="fa fa-bars"></i></button>
+            <div class="navbar-collapse nav-main-collapse collapse">
+              <nav class="nav-main">
+                <ul id="topMain" class="nav nav-pills nav-main colored">
+                  <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}"><strong>首页</strong><span>Home</span></a></li>
+                  <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/"><strong>怡德简介</strong><span>About YiDe</span></a></li>
+                  <li class="{% if page.category == 'authentication' %}active{% endif %}"><a href="{{ site.url }}/authentication/"><strong>怡德资质</strong><span>Authentication</span></a></li>
+                  <li class="{% if page.category == 'products' %}dropdown mega-menu active{% else %}dropdown mega-menu{% endif %}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.url }}/products/"><strong>产品中心</strong><span>Products</span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-4"><img id="mac_img" class="img-responsive" src="{{ site.url }}/images/assets/products.png" alt="产品中心"></div>                        
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/bath-mats.png"><a href="{{ site.url }}/bath-mats/"><i class="fa fa-angle-right"></i> 浴室垫-Bath Mats</a></li>
+                              <li data-img="/images/assets/drain-pan.png"><a href="{{ site.url }}/drain-pan/"><i class="fa fa-angle-right"></i> 沥水盘-Drain Pan</a></li>
+                              <li data-img="/images/assets/sink-pad.png"><a href="{{ site.url }}/sink-pad/"><i class="fa fa-angle-right"></i> 水槽垫-Sink Pad</a></li>
+                              <li data-img="/images/assets/bathroom-set.png"><a href="{{ site.url }}/bathroom-set/"><i class="fa fa-angle-right"></i> 卫浴套装-Bathroom Set</a></li>
+                              <li data-img="/images/assets/coasters.png"><a href="{{ site.url }}/coasters/"><i class="fa fa-angle-right"></i> 杯垫-Coasters</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/fence.png"><a href="{{ site.url }}/fence/"><i class="fa fa-angle-right"></i> 篱笆-Fence</a></li>
+                              <li data-img="/images/assets/mini-pad.png"><a href="{{ site.url }}/mini-pad/"><i class="fa fa-angle-right"></i> 迷你垫-Mini Pad</a></li>
+                              <li data-img="/images/assets/plastic-accessory.png"><a href="{{ site.url }}/plastic-accessory/"><i class="fa fa-angle-right"></i> 塑料配件加工-Plastic Accessory</a></li>
+                              <li data-img="/images/assets/plastic-mold.png"><a href="{{ site.url }}/plastic-mold/"><i class="fa fa-angle-right"></i> 塑料模具制造-Plastic Mold</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="{% if page.category == 'stock' %}dropdown mega-menu active{% else %}dropdown mega-menu{% endif %}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.url }}/stock/"><strong>现货库存</strong><span>Stock</span></span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-4"><img id="mac_img" class="img-responsive" src="{{ site.url }}/images/assets/products.png" alt="产品中心"></div>
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/bath-mats.png"><a href="{{ site.url }}/stock-bath-mats/"><i class="fa fa-angle-right"></i> 浴室垫-Bath Mats</a></li>
+                              <li data-img="/images/assets/drain-pan.png"><a href="{{ site.url }}/stock-drain-pan/"><i class="fa fa-angle-right"></i> 沥水盘-Drain Pan</a></li>
+                              <li data-img="/images/assets/sink-pad.png"><a href="{{ site.url }}/stock-sink-pad/"><i class="fa fa-angle-right"></i> 水槽垫-Sink Pad</a></li>
+                              <li data-img="/images/assets/bathroom-set.png"><a href="{{ site.url }}/stock-bathroom-set/"><i class="fa fa-angle-right"></i> 卫浴套装-Bathroom Set</a></li>
+                              <li data-img="/images/assets/coasters.png"><a href="{{ site.url }}/stock-coasters/"><i class="fa fa-angle-right"></i> 杯垫-Coasters</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/fence.png"><a href="{{ site.url }}/stock-fence/"><i class="fa fa-angle-right"></i> 篱笆-Fence</a></li>
+                              <li data-img="/images/assets/mini-pad.png"><a href="{{ site.url }}/stock-mini-pad/"><i class="fa fa-angle-right"></i> 迷你垫-Mini Pad</a></li>
+                              <li data-img="/images/assets/plastic-accessory.png"><a href="{{ site.url }}/stock-plastic-accessory/"><i class="fa fa-angle-right"></i> 塑料配件加工-Plastic Accessory</a></li>
+                              <li data-img="/images/assets/plastic-mold.png"><a href="{{ site.url }}/stock-plastic-mold/"><i class="fa fa-angle-right"></i> 塑料模具制造-Plastic Mold</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/wen/"><strong>新闻中心</strong><span>News</span></a></li>
+                  <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/"><strong>联系我们</strong><span>Contact Us</span></a></li>
+                  <li><a href="http://2559525768.qzone.qq.com" target="_blank" rel="nofollow"><strong>VIP专区</strong><span>VIP</span></a></li>
+                  <li><a href="{{ site.url }}" target="_blank">English<span>英文版</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
+      {{ content }}
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="spaced col-md-2">
+              <h4 style="font-family:Microsoft YaHei;font-size:14px;"><strong>填写内容</strong></h4>
+              <ul class="list-unstyled nobordered">
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+              </ul>
+            </div>
+            <div class="spaced col-md-2">
+              <h4 style="font-family:Microsoft YaHei;font-size:14px;"><strong>产品中心</strong></h4>
+              <ul class="list-unstyled nobordered">
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/bath-mats/" style="font-size:12px;">浴室垫</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/drain-pan/" style="font-size:12px;">沥水盘</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/sink-pad/" style="font-size:12px;">水槽垫</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/bathroom-set/" style="font-size:12px;">卫浴套装</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/coasters/" style="font-size:12px;">杯垫</a></li>
+              </ul>
+            </div>
+            <div class="spaced col-md-2">
+              <h4 style="font-family:Microsoft YaHei;font-size:14px;"><strong>产品中心</strong></h4>
+              <ul class="list-unstyled nobordered">
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/fence/" style="font-size:12px;">篱笆</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/mini-pad/" style="font-size:12px;">迷你垫</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/plastic-accessory/" style="font-size:12px;">塑料配件加工</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/plastic-mold/" style="font-size:12px;">塑料模具制造</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock/" style="font-size:12px;">现货库存</a></li>
+              </ul>
+            </div>
+            <div class="spaced col-md-2">
+              <h4 style="font-family:Microsoft YaHei;font-size:14px;"><strong>现货库存</strong></h4>
+              <ul class="list-unstyled nobordered">
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-bath-mats/" style="font-size:12px;">浴室垫</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-drain-pan/" style="font-size:12px;">沥水盘</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-sink-pad/" style="font-size:12px;">水槽垫</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-bathroom-set/" style="font-size:12px;">卫浴套装</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-coasters/" style="font-size:12px;">杯垫</a></li>
+              </ul>
+            </div>
+            <div class="spaced col-md-2">
+              <h4 style="font-family:Microsoft YaHei;font-size:14px;"><strong>现货库存</strong></h4>
+              <ul class="list-unstyled nobordered">
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-fence/" style="font-size:12px;">篱笆</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-mini-pad/" style="font-size:12px;">迷你垫</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-plastic-accessory/" style="font-size:12px;">塑料配件加工</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock-plastic-mold/" style="font-size:12px;">塑料模具制造</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}/stock/" style="font-size:12px;">现货库存</a></li>
+              </ul>
+            </div>
+            <div class="spaced col-md-2">
+              <h4 style="font-family:Microsoft YaHei;font-size:14px;"><strong>填写内容</strong></h4>
+              <ul class="list-unstyled nobordered">
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+                <li style="font-family:Microsoft YaHei"><a class="block" href="{{ site.url }}" style="font-size:12px;">填写内容</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container text-center fsize12" style="font-family:Microsoft YaHei">Copyright © 1999-2016 佛山市顺德区怡德塑料制品有限公司 | <a href="http://www.miitbeian.gov.cn/" class="fsize12" target="_blank" rel="nofollow" style="text-decoration:none;color:#777">粤ICP备11071875号-1</a> | <a href="{{ site.url }}/news/" class="fsize12" style="text-decoration:none;color:#777">xxxx</a> | <a href="{{ site.url }}/sitemap.html" class="fsize12" style="text-decoration:none;color:#777">网站地图</a> | <a href="{{ site.url }}/Sitemap.xml" class="fsize12" style="text-decoration:none;color:#777">Sitemap</a><br><a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777">关键字</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777">关键字</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777">关键字</a><br>{% page.category == 'home' %}友情链接：<a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777" target="_blank" rel="nofollow">开源网络</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777" target="_blank" rel="nofollow">开源网络</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777" target="_blank" rel="nofollow">开源网络</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777" target="_blank" rel="nofollow">开源网络</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777" target="_blank" rel="nofollow">开源网络</a> | <a href="{{ site.url }}" class="fsize12" style="text-decoration:none;color:#777" target="_blank" rel="nofollow">开源网络</a><br>{% endif %}<img class="img-responsive" src="{{ site.url }}/images/assets/v-logo.png"></div>
+        </div>
+      </footer>
+      <a href="#" id="toTop"></a>
+    </div>
+    {% javascript application %}
+    <div id="floatTools" class="rides-cs" style="height:158px;">
+      <div class="floatL">
+        <a id="aFloatTools_Show" class="btnOpen" title="查看在线客服" style="top:0px;display:block" href="javascript:void(0);">展开</a>
+        <a id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" style="top:0px;display:none" href="javascript:void(0);">收缩</a>
+      </div>
+      <div id="divFloatToolsView" class="floatR" style="display: none;height:138px;width: 140px;">
+        <div class="cn">
+          <h4 class="titZx">怡德在线客服<br>卢小姐<br><div align="center"><a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=554805860&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:554805860:41 &r=0.9988059234243309" alt="有问题请咨询我" title="有问题请咨询我"></a></div></h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

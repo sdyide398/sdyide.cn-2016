@@ -1,0 +1,33 @@
+---
+layout: pages
+permalink: /news/
+category: news
+title: 新闻中心
+keywords: 发酵饲料袋排气阀
+description: 咖啡排气阀、排气阀压阀机、发酵饲料袋排气阀专业模具开发、生产、销售厂家沃进塑料为企业提供最新最快的高品质塑料单向排气阀行业新闻资讯。
+---
+<section>
+  <div class="container">
+    <div id="blog" class="row">
+      <div class="col-md-3 col-sm-3">
+        {% include nav-news.html %}
+        {% include nav-products.html %}
+        {% include nav-stock.html %}
+        {% include nav-about.html %}
+        {% include nav-contact.html %}
+      </div>
+      <div class="col-md-9 col-sm-9">{% for post in site.categories["news"] %}
+        <div class="prev-article row">
+          <div class="blog-prev-date col-md-3 col-sm-3">
+            <span class="date"><small>{{ post.date | date:"%Y年%m月%d日" }}</small></span>
+            <span class="info hidden-xs"><span class="block"><i class="fa fa-user"></i> 作者：{{ post.keywords }}</span></span>
+          </div>
+          <div class="col-md-9 col-sm-9">
+            <h2 class="article-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.description }}</p>
+          </div>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

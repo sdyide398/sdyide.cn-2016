@@ -1,0 +1,61 @@
+---
+layout: pages
+permalink: /stock-bathroom-set/
+category: products
+type: 卫浴套装
+type-en: stock-bathroom-set
+title: 卫浴套装
+keywords: 卫浴套装关键字
+description: 卫浴套装摘要(description标签)。
+---
+<section>
+  <div class="container">
+    <div id="portfolio" class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          {% include nav-stock.html %}
+          {% include nav-products.html %}
+          {% include nav-news.html %}
+          {% include nav-about.html %}
+          {% include nav-contact.html %}
+        </div>
+        <div class="col-md-9 col-sm-9">
+          <div class="itemfilter">
+            <div class="itemfilter-item" data-filter-group='product-1'>
+              <div class="key"><span class="item-key">卫浴套装</span></div>
+              <div class="vals">
+                <div data-filter-group="products" class="filter-group collapsible collapsed">
+                  <a class="item" data-filter="" href="#">不限</a>
+                  <a class="item" data-filter=".三件套" href="#">三件套</a>
+                  <a class="item" data-filter=".四件套" href="#">四件套</a>
+                  <a class="item" data-filter=".五件套" href="#">五件套</a>
+                  <a class="item" data-filter=".六件套" href="#">六件套</a>
+                  <a class="item" data-filter=".七件套" href="#">七件套</a>
+                  <a class="item" data-filter=".八件套" href="#">八件套</a>
+                </div>
+              </div>
+              <div class="more"><a href="#" class="showmore">更多</a></div>
+            </div>
+          </div>
+          <ul class="sort-destination isotope" data-sort-id="isotope-list">{% for post in site.categories["stock"] %}{% if post.type-en == page.type-en %}
+            <li class="isotope-item col-xs-6 col-sm-4 col-md-3 {{ post.filter }}">
+              <div class="item-box">
+                <figure>
+                  <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                    <span class="overlay color2"></span>
+                    <span class="inner">
+                      <span class="block fa fa-search fsize20"></span>
+                      <strong>查看详情</strong>
+                    </span>
+                  </a>
+                  <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                </figure>
+                <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+              </div>
+            </li>{% endif %}{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

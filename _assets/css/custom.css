@@ -1,0 +1,46 @@
+.itemfilter {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding: 5px;
+}
+.itemfilter .itemfilter-item {
+    padding: 0 0 2px;
+}
+.itemfilter .itemfilter-item:last-of-type {
+    padding: 0;
+}
+.itemfilter .item-key {
+    background: #007890 none repeat scroll 0 0;
+    color: #fff;
+    padding: 2px 8px;
+    white-space: nowrap;
+}
+.itemfilter .item {
+    margin: 0 2px 0 0;
+}
+.itemfilter a {
+    border: 1px solid #fff;
+    line-height: 24px;
+    padding: 2px 5px;
+}
+.itemfilter a:hover {
+    color: #e4393c;
+}
+.itemfilter a.active {
+    background: #007890 none repeat scroll 0 0;
+    color: #fff;
+    padding: 2px 8px;
+}
+.itemfilter .key, .itemfilter .vals, .itemfilter .more {
+    display: table-cell;
+    padding: 3px;
+}
+.itemfilter .showmore {
+    white-space: nowrap;
+}
+.collapsed {
+    height: 23px;
+    overflow: hidden;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="zh"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>{dede:field.title/}</title>
+    <meta name="description" content="{dede:field.description/}" />
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <link rel="canonical" href="{dede:global.cfg_basehost/}/mini-pad/">
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="apple-touch-icon" href="{dede:global.cfg_basehost/}/images/assets/sdyide-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="怡德塑料">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="/assets/yide.css">
+    <!--[if lte IE 8]>
+      <script src="{dede:global.cfg_basehost/}/assets/respond.js"></script>
+    <![endif]-->
+  </head>
+  <body class="smoothscroll">
+    <div id="wrapper">
+      <div id="header" class="sticky">
+        {dede:include filename="head.htm"/}
+        <header id="topNav">
+          <div class="container">
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse"><i class="fa fa-bars"></i></button>
+            <div class="navbar-collapse nav-main-collapse collapse">
+              <nav class="nav-main">
+                <ul id="topMain" class="nav nav-pills nav-main colored">
+                  <li class=""><a href="{dede:global.cfg_basehost/}"><strong>首页</strong><span>Home</span></a></li>
+                  <li class=""><a href="{dede:global.cfg_basehost/}/about/"><strong>怡德简介</strong><span>About YiDe</span></a></li>
+                  <li class=""><a href="{dede:global.cfg_basehost/}/authentication/"><strong>怡德资质</strong><span>Authentication</span></a></li>
+                  <li class="dropdown mega-menu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{dede:global.cfg_basehost/}/products/"><strong>产品中心</strong><span>Products</span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-4"><img id="mac_img" class="img-responsive" src="{dede:global.cfg_basehost/}/images/assets/products.png" alt="产品中心"></div>                        
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/bath-mats.png"><a href="{dede:global.cfg_basehost/}/bath-mats/"><i class="fa fa-angle-right"></i> 浴室垫-Bath Mats</a></li>
+                              <li data-img="/images/assets/drain-pan.png"><a href="{dede:global.cfg_basehost/}/drain-pan/"><i class="fa fa-angle-right"></i> 沥水盘-Drain Pan</a></li>
+                              <li data-img="/images/assets/sink-pad.png"><a href="{dede:global.cfg_basehost/}/sink-pad/"><i class="fa fa-angle-right"></i> 水槽垫-Sink Pad</a></li>
+                              <li data-img="/images/assets/bathroom-set.png"><a href="{dede:global.cfg_basehost/}/bathroom-set/"><i class="fa fa-angle-right"></i> 卫浴套装-Bathroom Set</a></li>
+                              <li data-img="/images/assets/coasters.png"><a href="{dede:global.cfg_basehost/}/coasters/"><i class="fa fa-angle-right"></i> 杯垫-Coasters</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/fence.png"><a href="{dede:global.cfg_basehost/}/fence/"><i class="fa fa-angle-right"></i> 篱笆-Fence</a></li>
+                              <li data-img="/images/assets/mini-pad.png"><a href="{dede:global.cfg_basehost/}/mini-pad/"><i class="fa fa-angle-right"></i> 迷你垫-Mini Pad</a></li>
+                              <li data-img="/images/assets/plastic-accessory.png"><a href="{dede:global.cfg_basehost/}/plastic-accessory/"><i class="fa fa-angle-right"></i> 塑料配件加工-Plastic Accessory</a></li>
+                              <li data-img="/images/assets/plastic-mold.png"><a href="{dede:global.cfg_basehost/}/plastic-mold/"><i class="fa fa-angle-right"></i> 塑料模具制造-Plastic Mold</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown mega-menu active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{dede:global.cfg_basehost/}/stock/"><strong>现货库存</strong><span>Stock</span></span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-4"><img id="mac_img" class="img-responsive" src="{dede:global.cfg_basehost/}/images/assets/products.png" alt="产品中心"></div>
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/bath-mats.png"><a href="{dede:global.cfg_basehost/}/stock-bath-mats/"><i class="fa fa-angle-right"></i> 浴室垫-Bath Mats</a></li>
+                              <li data-img="/images/assets/drain-pan.png"><a href="{dede:global.cfg_basehost/}/stock-drain-pan/"><i class="fa fa-angle-right"></i> 沥水盘-Drain Pan</a></li>
+                              <li data-img="/images/assets/sink-pad.png"><a href="{dede:global.cfg_basehost/}/stock-sink-pad/"><i class="fa fa-angle-right"></i> 水槽垫-Sink Pad</a></li>
+                              <li data-img="/images/assets/bathroom-set.png"><a href="{dede:global.cfg_basehost/}/stock-bathroom-set/"><i class="fa fa-angle-right"></i> 卫浴套装-Bathroom Set</a></li>
+                              <li data-img="/images/assets/coasters.png"><a href="{dede:global.cfg_basehost/}/stock-coasters/"><i class="fa fa-angle-right"></i> 杯垫-Coasters</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul class="mac_menu">
+                              <li data-img="/images/assets/fence.png"><a href="{dede:global.cfg_basehost/}/stock-fence/"><i class="fa fa-angle-right"></i> 篱笆-Fence</a></li>
+                              <li data-img="/images/assets/mini-pad.png"><a href="{dede:global.cfg_basehost/}/stock-mini-pad/"><i class="fa fa-angle-right"></i> 迷你垫-Mini Pad</a></li>
+                              <li data-img="/images/assets/plastic-accessory.png"><a href="{dede:global.cfg_basehost/}/stock-plastic-accessory/"><i class="fa fa-angle-right"></i> 塑料配件加工-Plastic Accessory</a></li>
+                              <li data-img="/images/assets/plastic-mold.png"><a href="{dede:global.cfg_basehost/}/stock-plastic-mold/"><i class="fa fa-angle-right"></i> 塑料模具制造-Plastic Mold</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>              
+                  <li class=""><a href="{dede:global.cfg_basehost/}/wen/"><strong>新闻中心</strong><span>News</span></a></li>
+                  <li class=""><a href="{dede:global.cfg_basehost/}/contact/"><strong>联系我们</strong><span>Contact Us</span></a></li>
+                  <li><a href="http://2559525768.qzone.qq.com" target="_blank" rel="nofollow"><strong>VIP专区</strong><span>VIP</span></a></li>
+                  <li><a href="{dede:global.cfg_basehost/}" target="_blank">English<span>英文版</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
+      <section class="page-title">
+  <div class="container">
+    <header>
+      <ul class="breadcrumb">
+        <li><a href="{dede:global.cfg_basehost/}">首页</a></li>
+        <li class="active">现货库存迷你垫</li>
+      </ul>
+      <h2><strong>现货库存迷你垫</strong></h2>
+    </header>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div id="portfolio" class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+      {dede:include filename="stock-nav.htm"/}
+      {dede:include filename="products-nav.htm"/}  
+      {dede:include filename="news-nav.htm"/}
+      {dede:include filename="about-nav.htm"/}
+      {dede:include filename="contact-nav.htm"/}
+      </div>
+        <div class="col-md-9 col-sm-9">
+          <ul class="sort-destination isotope" data-sort-id="isotope-list">{dede:list typeid="22" orderby="hot" row="12" }
+            <li class="isotope-item col-xs-6 col-sm-4 col-md-3">
+              <div class="item-box">
+                <figure>
+                  <a class="item-hover" href="[field:arcurl/]">
+                    <span class="overlay color2"></span>
+                    <span class="inner">
+                      <span class="block fa fa-search fsize20"></span>
+                      <strong>查看详情</strong>
+                    </span>
+                  </a>
+                  <img class="img-responsive" src="[field:litpic/]" width="260" height="260" alt="[field:title/]">
+                </figure>
+                <div class="item-box-desc"><h4 align="center">[field:title/]</h4></div>
+              </div>
+            </li>
+            {/dede:list}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <footer id="footer">
+        {dede:include filename="foot.htm"/}
+        <div class="copyright">
+          <div class="container text-center fsize12" style="font-family:Microsoft YaHei">Copyright © 1999-2016 佛山市顺德区怡德塑料制品有限公司 | <a href="http://www.miitbeian.gov.cn/" class="fsize12" target="_blank" rel="nofollow" style="text-decoration:none;color:#777">粤ICP备11071875号-1</a> | <a href="{dede:global.cfg_basehost/}/news/" class="fsize12" style="text-decoration:none;color:#777">xxxx</a> | <a href="{dede:global.cfg_basehost/}/sitemap.html" class="fsize12" style="text-decoration:none;color:#777">网站地图</a> | <a href="{dede:global.cfg_basehost/}/Sitemap.xml" class="fsize12" style="text-decoration:none;color:#777">Sitemap</a><br><a href="{dede:global.cfg_basehost/}" class="fsize12" style="text-decoration:none;color:#777">关键字</a> | <a href="{dede:global.cfg_basehost/}" class="fsize12" style="text-decoration:none;color:#777">关键字</a> | <a href="{dede:global.cfg_basehost/}" class="fsize12" style="text-decoration:none;color:#777">关键字</a><br><img class="img-responsive" src="{dede:global.cfg_basehost/}/images/assets/v-logo.png"></div>
+        </div>
+      </footer>
+      <a href="#" id="toTop"></a>
+    </div>
+    <script src="/assets/yide.js"></script>
+    {dede:include filename="qq.htm"/}
+  </body>
+</html>

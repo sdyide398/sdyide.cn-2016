@@ -1,0 +1,44 @@
+---
+layout: pages
+permalink: /fence/
+category: products
+type: 篱笆
+type-en: fence
+title: 篱笆
+keywords: 篱笆关键字
+description: 篱笆摘要(description标签)。
+---
+<section>
+  <div class="container">
+    <div id="portfolio" class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          {% include nav-products.html %}
+          {% include nav-stock.html %}
+          {% include nav-news.html %}
+          {% include nav-about.html %}
+          {% include nav-contact.html %}
+        </div>
+        <div class="col-md-9 col-sm-9">
+          <ul class="sort-destination isotope" data-sort-id="isotope-list">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
+            <li class="isotope-item col-xs-6 col-sm-4 col-md-3">
+              <div class="item-box">
+                <figure>
+                  <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                    <span class="overlay color2"></span>
+                    <span class="inner">
+                      <span class="block fa fa-search fsize20"></span>
+                      <strong>查看详情</strong>
+                    </span>
+                  </a>
+                  <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                </figure>
+                <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+              </div>
+            </li>{% endif %}{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

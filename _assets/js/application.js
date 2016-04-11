@@ -1,0 +1,15 @@
+//= require jquery-2.1.4.min.js
+//= require jquery.isotope.js
+//= require modernizr.js
+//= require masonry.js
+//= require bootstrap.min.js
+//= require jquery.magnific-popup.min.js
+//= require owl.carousel.js
+//= require jquery.flexslider-min.js
+//= require jquery.themepunch.tools.min.js
+//= require jquery.themepunch.revolution.min.js
+//= require revolution_slider.js
+//= require scripts.js
+//= require shop-options.js
+//= require custom.js
+//= require zxkf.js
