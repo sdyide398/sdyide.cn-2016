@@ -1,7 +1,7 @@
-sdyide.cn-2015
+sdyide.cn-2016
 =============
 
-怡德塑料制品中文官网2015年版
+怡德塑料制品中文官网2016年版
 
 
 域名绑定、301转向及nginx配置
@@ -18,7 +18,7 @@ sdyide.cn-2015
     server {
         server_name www.sdyide.cn;
         index index.html;
-        root /srv/sdyide.cn-2015/_site;
+        root /srv/sdyide.cn-2016/_site;
         error_page 404 /Error.html;
     }
 
