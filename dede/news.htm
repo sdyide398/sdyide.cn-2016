@@ -116,7 +116,7 @@
       {dede:include filename="about-nav.htm"/}
       {dede:include filename="contact-nav.htm"/}
       </div>
-      <div class="col-md-9 col-sm-9">{dede:list pagesize='4'}
+      <div class="col-md-9 col-sm-9">{dede:arclist typeid="4"}
         <div class="prev-article row">
           <div class="blog-prev-date col-md-3 col-sm-3">
             <span class="date"><small>[field:pubdate function="MyDate('Y-m-d',@me)"/]</small></span>
@@ -126,12 +126,11 @@
             <h2 class="article-title"><a href="[field:arcurl/]">[field:title/]</a></h2>
             <p>[field:description/]</p>
           </div>
-        </div>{/dede:list}
+        </div>{/dede:arclist}
       </div>
     </div>
   </div>
 </section>
-
       <footer id="footer">
         {dede:include filename="foot.htm"/}
         <div class="copyright">
