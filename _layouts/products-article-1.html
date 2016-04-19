@@ -33,8 +33,8 @@ layout: article
           </div>
           <div class="col-md-12">
             <hr>
-            <h3 align="center">更多{{ page.type }}产品</h3>
-            <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
+            <h3 align="center">更多{{ page.type }}产品</h3>{% if page.type-en == 'authentication' %}
+            <div class="row">{% for post in site.categories["bath-mats"] %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -49,8 +49,8 @@ layout: article
                   </figure>
                   <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
                 </div>
-              </div>{% endif %}{% endfor %}
-            </div>
+              </div>{% endfor %}
+            </div>{% endif %}
           </div>
         </div>
       </div>

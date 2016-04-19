@@ -54,7 +54,7 @@ description: 浴室垫摘要(description标签)。
               <div class="more"><a href="#" class="showmore">更多</a></div>
             </div>
           </div>
-          <ul class="sort-destination isotope" data-sort-id="isotope-list">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
+          <ul class="sort-destination isotope" data-sort-id="isotope-list">{% for post in site.categories["bath-mats"] %}
             <li class="isotope-item col-xs-6 col-sm-4 col-md-3 {{ post.filter }}">
               <div class="item-box">
                 <figure>
@@ -69,7 +69,7 @@ description: 浴室垫摘要(description标签)。
                 </figure>
                 <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
               </div>
-            </li>{% endif %}{% endfor %}
+            </li>{% endfor %}
           </ul>
         </div>
       </div>
