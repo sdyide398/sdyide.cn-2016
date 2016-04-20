@@ -33,7 +33,7 @@ layout: article
           </div>
           <div class="col-md-12">
             <hr>
-            <h3 align="center">更多{{ page.type }}产品</h3>{% if page.type-en == 'authentication' %}
+            <h3 align="center">更多{{ page.type }}产品</h3>{% if page.type-en == post.type-en %}
             <div class="row">{% for post in site.categories["bath-mats"] %}
               <div class="col-md-3">
                 <div class="item-box">
