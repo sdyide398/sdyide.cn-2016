@@ -1,6 +1,7 @@
 ---
 layout: default
 category: home
+home: home
 full_title: 怡德塑料
 ---
 <div class="slider fullwidthbanner-container roundedcorners">
@@ -524,63 +525,14 @@ full_title: 怡德塑料
         </div>
       </div>
       <div class="col-md-9" style="padding-left:0px;">
-      <div class="row">
+      <div class="row">{% for post in site.categories["bathroom-set"] %}{% if post.home == page.home %}
       <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
         <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/drain-pan/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/25.jpg" alt="沥水盘">
+          <a href="{{ site.url }}{{ post.url }}" class="item-image">
+            <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-home.jpg" alt="{{ post.title }}">
           </a>
         </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/sink-pad/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/26.jpg" alt="水槽垫">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/bathroom-set/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/27.jpg" alt="卫浴套装">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/coasters/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/28.jpg" alt="杯垫">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/fence/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/29.jpg" alt="篱笆">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/mini-pad/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/30.jpg" alt="迷你垫">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/plastic-accessory/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/31.jpg" alt="塑料配件加工">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/plastic-accessory/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/32.jpg" alt="塑料配件加工">
-          </a>
-        </div>
-      </div>
+      </div>{% endif %}{% endfor %}
       </div>
       </div>
     </div>
