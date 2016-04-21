@@ -24,11 +24,16 @@ description: 网站地图
               </li>
             </ul>
             <ul class="list-unstyled">
-              <li><strong><a href="{{ site.url }}/stock/">现货库存</a></strong></li>
-            </ul>
-            <ul class="list-unstyled">
               <li><strong><a href="{{ site.url }}/contact/">联系我们</a></strong></li>
             </ul>
+            <ul class="list-unstyled">
+              <li>
+                <strong><a href="{{ site.url }}/stock/">现货库存</a></strong>
+                <ul>{% for post in site.categories["stock"] %}
+                  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+                </ul>
+              </li>
+            </ul>            
           </div>
           <div class="col-md-4 col-sm-4">
             <ul class="list-unstyled">
@@ -37,56 +42,56 @@ description: 网站地图
                 <ul>
                   <li>
                     <a href="{{ site.url }}/bath-mats/">浴室垫</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "bath-mats" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["bath-mats"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li>
                   <li>
                     <a href="{{ site.url }}/drain-pan/">沥水盘</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "drain-pan" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["drain-pan"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li>
                   <li>
                     <a href="{{ site.url }}/sink-pad/">水槽垫</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "sink-pad" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["sink-pad"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li> 
                   <li>
                     <a href="{{ site.url }}/bathroom-set/">卫浴套装</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "bathroom-set" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["bathroom-set"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li> 
                   <li>
                     <a href="{{ site.url }}/coasters/">杯垫</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "coasters" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["coasters"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li> 
                   <li>
                     <a href="{{ site.url }}/fence/">篱笆</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "fence" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["fence"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li> 
                   <li>
                     <a href="{{ site.url }}/mini-pad/">迷你垫</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "mini-pad" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["mini-pad"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li> 
                   <li>
                     <a href="{{ site.url }}/plastic-accessory/">塑料配件加工</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "plastic-accessory" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["plastic-accessory"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li>
                   <li>
                     <a href="{{ site.url }}/plastic-mold/">塑料模具制造</a>
-                    <ul>{% for post in site.categories["products"] %}{% if post.type-en == "plastic-mold" %}
-                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
+                    <ul>{% for post in site.categories["plastic-mold"] %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                     </ul>
                   </li>               
                 </ul>
