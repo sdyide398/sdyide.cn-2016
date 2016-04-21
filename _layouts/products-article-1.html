@@ -33,8 +33,144 @@ layout: article
           </div>
           <div class="col-md-12">
             <hr>
-            <h3 align="center">更多{{ page.type }}产品</h3>{% if page.type-en == post.type-en %}
+            <h3 align="center">更多{{ page.type }}产品</h3>{% if page.type-en == 'bath-mats' %}
             <div class="row">{% for post in site.categories["bath-mats"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'drain-pan' %}
+            <div class="row">{% for post in site.categories["drain-pan"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'sink-pad' %}
+            <div class="row">{% for post in site.categories["sink-pad"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'bathroom-set' %}
+            <div class="row">{% for post in site.categories["bathroom-set"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'coasters' %}
+            <div class="row">{% for post in site.categories["coasters"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'fence' %}
+            <div class="row">{% for post in site.categories["fence"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'mini-pad' %}
+            <div class="row">{% for post in site.categories["mini-pad"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'plastic-accessory' %}
+            <div class="row">{% for post in site.categories["plastic-accessory"] %}
+              <div class="col-md-3">
+                <div class="item-box">
+                  <figure>
+                    <a class="item-hover" href="{{ site.url }}{{ post.url }}">
+                      <span class="overlay color2"></span>
+                      <span class="inner">
+                        <span class="block fa fa-search fsize20"></span>
+                        <strong>查看详情</strong>
+                      </span>
+                    </a>
+                    <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-1.jpg" width="260" height="260" alt="{{ post.title }}">
+                  </figure>
+                  <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
+                </div>
+              </div>{% endfor %}
+            </div>{% endif %}{% if page.type-en == 'plastic-mold' %}
+            <div class="row">{% for post in site.categories["plastic-mold"] %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
