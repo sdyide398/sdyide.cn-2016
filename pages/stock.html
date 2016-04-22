@@ -16,7 +16,7 @@ title: 现货库存
           {% include nav-contact.html %}
         </div>
         <div class="col-sm-9">
-          <ul class="sort-destination isotope" data-sort-id="isotope-list">{% for post in site.categories["products"] %}{% if post.stock == "stock" %}
+          <ul class="sort-destination isotope" data-sort-id="isotope-list">{% for post in site.categories["stock"] %}
             <li class="isotope-item col-xs-6 col-sm-6 col-md-3">
               <div class="item-box">
                 <figure>
@@ -31,7 +31,7 @@ title: 现货库存
                 </figure>
                 <div class="item-box-desc"><h4 align="center">{{ post.title }}</h4></div>
               </div>
-            </li>{% endif %}{% endfor %}
+            </li>{% endfor %}
           </ul>
         </div>
       </div>
