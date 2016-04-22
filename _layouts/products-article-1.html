@@ -33,7 +33,7 @@ layout: article
           <div class="col-md-12">
             <hr>
             <h3 align="center">更多{{ page.type }}产品</h3>{% if page.type-en == 'bath-mats' %}
-            <div class="row">{% for post in site.categories["bath-mats"] %}
+            <div class="row">{% for post in site.categories["bath-mats"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -50,7 +50,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'drain-pan' %}
-            <div class="row">{% for post in site.categories["drain-pan"] %}
+            <div class="row">{% for post in site.categories["drain-pan"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -67,7 +67,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'sink-pad' %}
-            <div class="row">{% for post in site.categories["sink-pad"] %}
+            <div class="row">{% for post in site.categories["sink-pad"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -84,7 +84,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'bathroom-set' %}
-            <div class="row">{% for post in site.categories["bathroom-set"] %}
+            <div class="row">{% for post in site.categories["bathroom-set"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -101,7 +101,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'coasters' %}
-            <div class="row">{% for post in site.categories["coasters"] %}
+            <div class="row">{% for post in site.categories["coasters"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -118,7 +118,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'fence' %}
-            <div class="row">{% for post in site.categories["fence"] %}
+            <div class="row">{% for post in site.categories["fence"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -135,7 +135,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'mini-pad' %}
-            <div class="row">{% for post in site.categories["mini-pad"] %}
+            <div class="row">{% for post in site.categories["mini-pad"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -152,7 +152,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'plastic-accessory' %}
-            <div class="row">{% for post in site.categories["plastic-accessory"] %}
+            <div class="row">{% for post in site.categories["plastic-accessory"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>
@@ -169,7 +169,7 @@ layout: article
                 </div>
               </div>{% endfor %}
             </div>{% endif %}{% if page.type-en == 'plastic-mold' %}
-            <div class="row">{% for post in site.categories["plastic-mold"] %}
+            <div class="row">{% for post in site.categories["plastic-mold"] limit:8 %}
               <div class="col-md-3">
                 <div class="item-box">
                   <figure>

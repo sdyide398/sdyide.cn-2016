@@ -1,8 +1,0 @@
-<ul class="side-nav list-group">
-  <li class="active">
-    <a href="{{ site.url }}/news/">新闻中心</a>
-    <ul class="collapse in">{% for post in site.categories["new"] limit:10 %}
-      <li class="{% if post.title == page.title %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}"><i class="fa fa-angle-right"></i> {{ post.title }}</a></li>{% endfor %}
-    </ul>
-  </li>
-</ul>
