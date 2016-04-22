@@ -1,10 +1,10 @@
 url: http://www.gdhydec.com
 
-title: 怡德塑料
+title: 防滑垫_浴室防滑垫_怡德塑料制品有限公司
 
-keywords: 首页关键字
+keywords: 防滑垫,防滑地垫生产厂家,防滑垫供应,浴室防滑垫,家居防滑垫,浴室垫供应,浴室防滑垫批发
 
-description: 首页摘要。
+description: 怡德塑料制品有限公司是业内最专业的防滑垫生产厂家和浴室垫生产厂家之一,我们专注生产防滑垫,防滑地垫,浴室垫和浴室防滑垫有16年的经验,同时拥有完善快捷的物流供应系统,由防滑垫生产到防滑垫批发供应以及浴室防滑垫生产到浴室防滑垫的批发供应都是您最好的选择。
 
 qq: 554805860
 
@@ -15,6 +15,7 @@ relative_permalinks: false
 exclude:
   - README.md
   - dede
+  - dede1
 
 assets:
   dirname: assets
