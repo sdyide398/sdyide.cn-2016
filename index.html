@@ -11,7 +11,7 @@ full_title: 怡德塑料
         <img src="{{ site.url }}/images/home/1x1.png" data-lazyload="/images/home/billboard.jpg" alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
         <div class="tp-caption large_bold_white sft stb" data-x="60" data-y="223" data-speed="300" data-start="500" data-easing="easeOutExpo">专注浴室防滑垫</div>
         <div class="tp-caption medium_text lfl stl" data-x="63" data-y="286" data-speed="500" data-start="1000" data-easing="easeOutExpo">The Professor of Bath Mat</div>
-        <div class="tp-caption sft medium_light_white" data-x="600" data-y="60" data-speed="600" data-start="1500" data-easing="easeOutExpo"><a href="{{ site.url }}/bath-mats/bm6939-01s-3.html"><img src="{{ site.url }}/imagesbillboard-1.png" alt=""></a></div>
+        <div class="tp-caption sft medium_light_white" data-x="600" data-y="60" data-speed="600" data-start="1500" data-easing="easeOutExpo"><a href="{{ site.url }}/bath-mats/bm6939-01s-3.html"><img src="{{ site.url }}/images/home/billboard-1.png" alt=""></a></div>
       </li>
       <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-saveperformance="off">
         <img src="{{ site.url }}/images/home/1x1.png" data-lazyload="/images/home/billboard.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
@@ -217,15 +217,16 @@ full_title: 怡德塑料
 <section>
   <div class="container">
     <h2 style="font-family:Microsoft YaHei;font-size:22px;">产品展示-Products Show</h2>
-    <div class="owl-carousel featured" data-plugin-options='{"singleItem": false, "stopOnHover":false, "autoPlay":true, "autoHeight": false, "navigation": true, "pagination": false}'>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show1.jpg" width="230"></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show2.jpg" width="230" /></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show3.jpg" width="230" /></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show4.jpg" width="230" /></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show5.jpg" width="230" /></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show3.jpg" width="230" /></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show1.jpg" width="230" /></a>
-      <a href="{{ site.url }}/drain-pan/"><img alt="" src="{{ site.url }}/images/home/show2.jpg" width="230" /></a>
+    <div class="owl-carousel featured" data-plugin-options='{"singleItem": false, "stopOnHover":false, "autoPlay":true, "autoHeight": false, "navigation": true, "pagination": false}'>{% for post in site.categories["bath-mats"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["drain-pan"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["sink-pad"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["bathroom-set"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["coasters"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["fence"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["mini-pad"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["plastic-accessory"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}{% for post in site.categories["plastic-mold"] %}{% if post.show == page.show %}
+      <a href="{{ site.url }}{{ post.url }}"><img alt="" src="{{ site.url }}/images/products/{{ post.image }}-show.jpg" width="230"></a>{% endif %}{% endfor %}
     </div>
   </div>
 </section>
@@ -355,69 +356,21 @@ full_title: 怡德塑料
     <div class="row">
       <div class="col-md-3" style="padding-right:0px;">
         <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/bath-mats/" class="item-image">
+          <a href="{{ site.url }}/stock/" class="item-image">
             <img class="img-responsive" src="{{ site.url }}/images/home/home-stock-1.jpg" alt="浴室垫">
           </a>
         </div>
       </div>
       <div class="col-md-9" style="padding-left:0px;">
       <div class="row">
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/drain-pan/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/33.jpg" alt="沥水盘">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/sink-pad/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/34.jpg" alt="水槽垫">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/bathroom-set/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/35.jpg" alt="卫浴套装">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center" style="margin-bottom:8px">
-          <a href="{{ site.url }}/coasters/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/36.jpg" alt="杯垫">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/fence/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/37.jpg" alt="篱笆">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/mini-pad/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/38.jpg" alt="迷你垫">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/plastic-accessory/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/39.jpg" alt="塑料配件加工">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
-        <div class="box-content thumbnail text-center">
-          <a href="{{ site.url }}/plastic-accessory/" class="item-image">
-            <img class="img-responsive" src="{{ site.url }}/images/home/40.jpg" alt="塑料配件加工">
-          </a>
-        </div>
-      </div>
+        {% for post in site.categories["stock"] %}{% if post.home == page.home %}
+          <div class="col-xs-6 col-sm-4 col-md-3" style="padding-right:0px;">
+            <div class="box-content thumbnail text-center" style="margin-bottom:8px">
+              <a href="{{ site.url }}{{ post.url }}" class="item-image">
+                <img class="img-responsive" src="{{ site.url }}/images/products/{{ post.image }}-home.jpg" alt="{{ post.title }}">
+              </a>
+            </div>
+          </div>{% endif %}{% endfor %}
       </div>
       </div>
     </div>
