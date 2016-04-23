@@ -8,7 +8,7 @@ description: 怡德塑料制品有限公司是业内最专业的防滑垫生产�
 
 qq: 554805860
 
-permalink: /products/:title.html
+paginate: 6
 
 relative_permalinks: false
 
