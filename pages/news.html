@@ -1,6 +1,6 @@
 ---
 layout: pages
-paginate_path: "news/page:num"
+permalink: /news/
 category: news
 title: 新闻中心
 keywords: 新闻中心
@@ -27,13 +27,6 @@ description: 新闻中心。
             <p>{{ post.description }}</p>
           </div>
         </div>{% endfor %}
-        <div class="text-center">
-          <ul class="pagination">
-            <li class="disabled">{% if paginator.total_pages > 1 %}{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>{% else %}<a>&laquo;</a>{% endif %}</li>
-            {% for page in (1..paginator.total_pages) %}<li class="active">{% if page == paginator.page %}<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }} <span class="sr-only">(current)</span></a>{% else %}<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>{% endif %}</li>{% endfor %}
-            <li>{% if paginator.next_page %}<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>{% else %}<a>&raquo;</a>{% endif %}</li>
-          </ul>
-        </div>
         <div class="row">
           <div class="toggle transparent">
             <div class="toggle">
